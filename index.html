@@ -6,9 +6,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Pakistan Government Document Guide</h1>
-    <p>Step-by-step help for CNIC, Passport, Driving License & more</p>
+   <header>
+    <h1 class="lang-en">Pakistan Government Document Guide</h1>
+    <h1 class="lang-ur urdu">پاکستانی حکومتی دستاویزات کی رہنمائی</h1>
+    <p class="lang-en">Step-by-step help for CNIC, Passport, Driving License & more</p>
+    <p class="lang-ur urdu">شناختی کارڈ، پاسپورٹ، ڈرائیونگ لائسنس وغیرہ کی مرحلہ وار رہنمائی</p>
+
+    <div class="language-toggle">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('ur')">اردو</button>
+    </div>
   </header>
 
   <nav>
@@ -20,46 +27,78 @@
 
   <div class="container">
     <section class="guide" id="cnic">
-      <h2>How to Apply for CNIC</h2>
-      <ul>
+      <h2 class="lang-en">How to Apply for CNIC</h2>
+      <h2 class="lang-ur urdu">نیا شناختی کارڈ کیسے حاصل کریں؟</h2>
+      <ul class="lang-en">
         <li>Go to your nearest NADRA center.</li>
         <li>Bring original B-Form or old CNIC, and one family member.</li>
         <li>Token → Photo → Biometrics → Interview → Print slip.</li>
         <li>Fee: Normal – Rs. 400 | Urgent – Rs. 1150</li>
         <li>Processing Time: 7–30 days</li>
       </ul>
+      <ul class="lang-ur urdu">
+        <li>قریبی نادرا مرکز جائیں۔</li>
+        <li>اصلی بی فارم یا پرانا شناختی کارڈ اور ایک فیملی ممبر ساتھ لائیں۔</li>
+        <li>ٹoken → تصویر → بایومیٹرکس → انٹرویو → پرنٹ سلپ</li>
+        <li>فیس: نارمل – 400 روپے | ارجنٹ – 1150 روپے</li>
+        <li>مدت: 7 سے 30 دن</li>
+      </ul>
     </section>
 
     <section class="guide" id="passport">
-      <h2>How to Apply for Passport</h2>
-      <ul>
+      <h2 class="lang-en">How to Apply for Passport</h2>
+      <h2 class="lang-ur urdu">پاسپورٹ کے لیے درخواست کیسے دیں؟</h2>
+      <ul class="lang-en">
         <li>Visit your regional passport office.</li>
         <li>Bring CNIC, photos, and previous passport if renewing.</li>
         <li>Token → Photo → Biometrics → Interview → Fee Payment</li>
         <li>Fee: Normal – Rs. 3,000 | Urgent – Rs. 5,000</li>
         <li>Processing Time: 10–20 working days</li>
       </ul>
+      <ul class="lang-ur urdu">
+        <li>قریبی پاسپورٹ دفتر جائیں۔</li>
+        <li>شناختی کارڈ، تصاویر اور اگر تجدید کر رہے ہیں تو پرانا پاسپورٹ ساتھ لائیں۔</li>
+        <li>ٹoken → تصویر → بایومیٹرکس → انٹرویو → فیس کی ادائیگی</li>
+        <li>فیس: نارمل – 3000 روپے | ارجنٹ – 5000 روپے</li>
+        <li>مدت: 10 سے 20 ورکنگ دن</li>
+      </ul>
     </section>
 
     <section class="guide" id="license">
-      <h2>How to Get Driving License</h2>
-      <ul>
+      <h2 class="lang-en">How to Get Driving License</h2>
+      <h2 class="lang-ur urdu">ڈرائیونگ لائسنس کیسے حاصل کریں؟</h2>
+      <ul class="lang-en">
         <li>Apply online via <a href="https://dlims.punjab.gov.pk/" target="_blank">DLIMS</a> or visit licensing office.</li>
         <li>Bring CNIC copy, passport-size photos, medical form.</li>
         <li>Take learner permit → Give driving test after 42 days.</li>
         <li>Fee: Rs. 60 (learner), Rs. 300–750 (permanent)</li>
         <li>Processing Time: 1–2 weeks</li>
       </ul>
+      <ul class="lang-ur urdu">
+        <li>آن لائن درخواست دیں <a href="https://dlims.punjab.gov.pk/" target="_blank">DLIMS</a> کے ذریعے یا لائسنس دفتر جائیں۔</li>
+        <li>شناختی کارڈ کی کاپی، تصاویر، میڈیکل فارم ساتھ لائیں۔</li>
+        <li>لرنر پرمٹ حاصل کریں → 42 دن بعد ڈرائیونگ ٹیسٹ دیں۔</li>
+        <li>فیس: لرنر – 60 روپے | پرمننٹ – 300 تا 750 روپے</li>
+        <li>مدت: 1 سے 2 ہفتے</li>
+      </ul>
     </section>
 
     <section class="guide" id="domicile">
-      <h2>How to Apply for Domicile Certificate</h2>
-      <ul>
+      <h2 class="lang-en">How to Apply for Domicile Certificate</h2>
+      <h2 class="lang-ur urdu">ڈومیسائل سرٹیفکیٹ کے لیے درخواست کیسے دیں؟</h2>
+      <ul class="lang-en">
         <li>Visit your district commissioner office.</li>
         <li>Bring CNIC, educational certificate, proof of residence.</li>
         <li>Submit documents + small interview.</li>
         <li>Fee: Rs. 200–500 depending on district</li>
         <li>Processing Time: 5–10 working days</li>
+      </ul>
+      <ul class="lang-ur urdu">
+        <li>اپنے ضلع کے کمشنر آفس جائیں۔</li>
+        <li>شناختی کارڈ، تعلیمی سرٹیفکیٹ اور رہائش کا ثبوت ساتھ لائیں۔</li>
+        <li>دستاویزات جمع کروائیں + مختصر انٹرویو دیں۔</li>
+        <li>فیس: 200 تا 500 روپے (ضلع پر منحصر)</li>
+        <li>مدت: 5 تا 10 ورکنگ دن</li>
       </ul>
     </section>
   </div>
